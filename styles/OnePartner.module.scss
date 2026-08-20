@@ -1,6 +1,12 @@
 .one-partner-section {
   width: 100%;
   padding: 60px 70px;
+  @media (max-width: 1280px) {
+    padding: 60px 40px;
+  }
+  @media (max-width: 1180px) {
+    padding: 40px 20px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,6 +82,41 @@
           letter-spacing: 0%;
           color: #333333;
           margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .one-partner-section {
+    padding: 40px 20px;
+    h6 {
+      font-size: 14px;
+      @media (max-width:768px) {
+        font-size: 13px;
+      }
+    }
+    h2 {
+      font-size: 42px;
+      line-height: 46px;
+    }
+    .all-one-partner-cards {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+      .divider {
+        width: 1px;
+        height: 65px;
+        margin: 0 14px;
+      }
+      .one-partner-card {
+        gap: 16px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        .card-detail{
+          text-align: center;
         }
       }
     }

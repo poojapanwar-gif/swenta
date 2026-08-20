@@ -2,8 +2,18 @@
   width: 100%;
   background: #152644;
   padding: 40px 70px;
+  @media (max-width: 1280px) {
+    padding: 40px 40px;
+  }
+  @media (max-width: 1180px) {
+    padding: 40px 20px;
+  }
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 28px;
+  }
   h5 {
     font-weight: 600;
     font-style: SemiBold;
@@ -23,6 +33,21 @@
       line-height: auto;
       letter-spacing: 0%;
       color: #f2f2f7;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .every-stage-section {
+    padding: 28px 16px;
+    h5 {
+      font-size: 12px;
+    }
+    gap: 16px;
+    .all-stages {
+      flex-wrap: wrap;
+      h6 {
+        font-size: 12px;
+      }
     }
   }
 }

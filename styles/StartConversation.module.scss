@@ -2,11 +2,26 @@
   width: 100%;
   background: #152644;
   padding: 80px 100px;
+  @media (max-width: 1280px) {
+    padding: 60px 40px;
+  }
+  @media (max-width: 1180px) {
+    padding: 60px 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 16px;
+  }
   .conversation-left-right-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 100px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 40px;
+      align-items: start;
+      justify-content: start;
+    }
     .conversation-left-section {
       h6 {
         font-weight: 600;
@@ -81,6 +96,25 @@
             text-decoration-skip-ink: auto;
             cursor: pointer;
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .start-conversation-section {
+    .conversation-left-right-section {
+      .conversation-left-section {
+        h6 {
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 28px;
+        }
+      }
+      .conversation-right-section {
+        p {
+          font-size: 16px;
         }
       }
     }

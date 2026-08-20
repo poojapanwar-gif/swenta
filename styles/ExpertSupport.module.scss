@@ -1,6 +1,15 @@
 .expert-support-section {
   width: 100%;
   padding: 60px 70px;
+  @media (max-width: 1280px) {
+    padding: 60px 40px;
+  }
+  @media (max-width: 1180px) {
+    padding: 40px 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+  }
   h6 {
     font-weight: 600;
     font-style: SemiBold;
@@ -37,7 +46,7 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px ;
+    gap: 40px;
     .expert-support-card {
       cursor: pointer;
       padding-right: 40px;
@@ -98,6 +107,99 @@
           border: none;
           cursor: pointer;
           background: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .expert-support-section {
+    h6 {
+      font-size: 14px;
+    }
+    .heading-para {
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        font-size: 38px;
+        line-height: 44px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .all-expert-support-cards {
+      margin-top: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      .expert-support-card {
+        padding-right: 0px;
+        padding: 20px;
+        &::after {
+          display: none;
+        }
+        h2 {
+          font-size: 58px;
+        }
+        .card-detail {
+          margin-top: 40px;
+          h5 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 16px;
+          }
+          button {
+            font-size: 16px;
+          }
+        }
+        &:nth-child(even) {
+          border-left: 1px solid #000000;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .expert-support-section {
+    h6 {
+      font-size: 12px;
+      padding: 0px 16px;
+    }
+    .heading-para {
+      gap: 10px;
+      padding: 0px 16px;
+      h2 {
+        font-size: 28px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .all-expert-support-cards {
+      margin-top: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0px;
+      .expert-support-card {
+        border-bottom: 1px solid #000000;
+        &:last-child{
+          border-bottom: none;
+        }
+        h2 {
+          font-size: 64px;
+        }
+        .card-detail {
+          h5 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        &:nth-child(even) {
+          border-left: none;
         }
       }
     }

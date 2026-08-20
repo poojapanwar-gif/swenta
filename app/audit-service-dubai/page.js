@@ -5,6 +5,7 @@ import AuditExpertSupport from "@/components/AuditServiceDubai/AuditExpertSuppor
 import AuditFaqs from "@/components/AuditServiceDubai/AuditFaqs";
 import AuditOnePartner from "@/components/AuditServiceDubai/AuditOnePartner";
 import AuditStartConversation from "@/components/AuditServiceDubai/AuditStartConversation";
+import AuditWhoSupport from "@/components/AuditServiceDubai/AuditWhoSupport";
 import AuditWhySwenta from "@/components/AuditServiceDubai/AuditWhySwenta";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
     <AuditClientExperience/>
     <AuditExpertSupport/>
     <AuditWhySwenta/>
+    <AuditWhoSupport/>
     <AuditOnePartner/>
     <AuditFaqs/>
     <AuditStartConversation/>

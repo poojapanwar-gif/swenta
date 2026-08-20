@@ -5,6 +5,7 @@ import TaxExpertSupport from "@/components/CorporateTaxServicesUAE/TaxExpertSupp
 import TaxFaqs from "@/components/CorporateTaxServicesUAE/TaxFaqs";
 import TaxOnePartner from "@/components/CorporateTaxServicesUAE/TaxOnePartner";
 import TaxStartConversation from "@/components/CorporateTaxServicesUAE/TaxStartConversation";
+import TaxWhoSupport from "@/components/CorporateTaxServicesUAE/TaxWhoSupport";
 import TaxWhySwenta from "@/components/CorporateTaxServicesUAE/TaxWhySwenta";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <TaxClientExperience />
       <TaxExpertSupport />
       <TaxWhySwenta />
+      <TaxWhoSupport/>
       <TaxOnePartner />
       <TaxFaqs />
       <TaxStartConversation />

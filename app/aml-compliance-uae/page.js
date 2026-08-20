@@ -5,6 +5,7 @@ import AmlExpertSupport from "@/components/AMLComplianceUAE/AmlExpertSupport";
 import AmlFaqs from "@/components/AMLComplianceUAE/AmlFaqs";
 import AmlOnePartner from "@/components/AMLComplianceUAE/AmlOnePartner";
 import AmlStartConversation from "@/components/AMLComplianceUAE/AmlStartConversation";
+import AmlWhoSupport from "@/components/AMLComplianceUAE/AmlWhoSupport";
 import AmlWhySwenta from "@/components/AMLComplianceUAE/AmlWhySwenta";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
     <AmlClientExperience/>
     <AmlExpertSupport/>
     <AmlWhySwenta/>
+    <AmlWhoSupport/>
     <AmlOnePartner/>
     <AmlFaqs/>
     <AmlStartConversation/>

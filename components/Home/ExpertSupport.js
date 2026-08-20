@@ -56,21 +56,6 @@ const ExpertSupport = () => {
             <div className={styles["card-detail"]}>
               <h5>{item.name}</h5>
               <p>{item.detail}</p>
-              <button>
-                View this service{" "}
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.74401 7.36003L6.68801 6.30403L7.95201 5.07203L8.65601 4.44803H1.32322e-05V2.91203H8.65601L7.95201 2.28803L6.68801 1.05603L7.74401 2.86102e-05L11.408 3.68003L7.74401 7.36003Z"
-                    fill="#152644"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         ))}

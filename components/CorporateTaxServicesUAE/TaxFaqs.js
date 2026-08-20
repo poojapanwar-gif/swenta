@@ -14,12 +14,12 @@ const TaxFaqs = () => {
     {
       question: "Can Swenta help with both corporate tax and VAT?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Yes. The scope can cover corporate tax, VAT and related accounting requirements based on your needs.",
     },
     {
       question: "What is required before filing?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Accurate accounting records and supporting documentation are essential. Swenta can first assess readiness and identify gaps.",
     },
   ];
 

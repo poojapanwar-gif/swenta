@@ -14,12 +14,12 @@ const AuditFaqs = () => {
     {
       question: "Can Swenta help prepare for an audit?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Yes. The team can review records, reconciliations and supporting documentation before the formal engagement.",
     },
     {
       question: "How long does an audit take?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Timing depends on business size, record readiness, reporting period and scope. These are assessed before the engagement begins.",
     },
   ];
 

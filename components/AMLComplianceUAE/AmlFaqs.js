@@ -14,12 +14,12 @@ const AmlFaqs = () => {
     {
       question: "Can Swenta review an existing AML framework?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Yes. Swenta can assess policies, risk methodology, due diligence processes and supporting records to identify gaps.",
     },
     {
       question: "Is AML training included?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Training and awareness support can be included depending on the engagement scope and team requirements.",
     },
   ];
 

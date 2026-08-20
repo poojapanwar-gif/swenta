@@ -14,22 +14,22 @@ const Faqs = () => {
     {
       question: "Can Swenta support Mainland and Free Zone businesses?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Swenta works with UAE businesses across different structures. The consultation helps the team understand your setup before recommending the right scope.",
     },
     {
       question: "What information is needed to get started?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "This depends on the service. Start with a short consultation, after which the team will share a clear list of documents and next steps.",
     },
     {
       question: "How much do the services cost?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Fees depend on business size, transaction volume, current systems and the required scope. Swenta provides a tailored proposal after reviewing your needs.",
     },
     {
       question: "How quickly will the team respond?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Submit your enquiry or message Swenta on WhatsApp. A team member will review your request and contact you during business hours.",
     },
   ];
 

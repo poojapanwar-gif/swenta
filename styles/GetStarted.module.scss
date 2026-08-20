@@ -1,0 +1,57 @@
+.getstarted-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 70px;
+  .get-started-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../public/images/footerback1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 80px 150px;
+    h6 {
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 14px;
+      line-height: auto;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    h2 {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 65px;
+      line-height: 78px;
+      letter-spacing: -1.7px;
+      color: #000000;
+      margin-top: 20px;
+    }
+    button {
+      height: 44px;
+      padding: 0px 40px;
+      border-radius: 7px;
+      background: #152644;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      line-height: auto;
+      letter-spacing: 0%;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      border: none;
+      margin-top: 16px;
+    }
+  }
+}

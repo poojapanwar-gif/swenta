@@ -1,172 +1,146 @@
 import React from "react";
-import Link from "next/link";
-import styles from '../../styles/Footer.module.scss'
-import footerlogo from '../../public/images/footerlogo.svg'
+import styles from "../../styles/Footer.module.scss";
 import Image from "next/image";
+import footerlogo from "../../public/images/footerlogo.svg";
+import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        {/* =====================================================
-            CTA
-        ===================================================== */}
-
-        <div className={styles.ctaSection}>
-          <div className={styles.blurLeft} aria-hidden="true" />
-          <div className={styles.blurRight} aria-hidden="true" />
-
-          <span className={styles.subTitle}>GET STARTED TODAY</span>
-
-          <h2>
-            Is Your Business Ready
-            <br />
-            for Growth with Swenta?
-          </h2>
-
-          <button type="button" className={styles.ctaBtn}>
-            Get Started
-            <span aria-hidden="true">→</span>
-          </button>
-        </div>
-
-        {/* =====================================================
-            FOOTER CONTENT
-        ===================================================== */}
-
-        <div className={styles.footerContent}>
-          {/* ---------------------------------------------------
-              LOGO
-          --------------------------------------------------- */}
-
-          <div className={styles.left}>
-            <div className={styles.logo}>
-              <Image src={footerlogo} alt="Swenta" />
-            </div>
-
-            <p className={styles.copy}>Copyright © 2025 Swenta Global</p>
-          </div>
-
-          {/* ---------------------------------------------------
-              CONTACT
-          --------------------------------------------------- */}
-
-          <div className={styles.contact}>
-            <h4>Contact</h4>
-
-            <div className={styles.contactGrid}>
-              {/* UK + UAE */}
-              <div>
-                <p>
-                  UK: 167-169 Great Portland Street,
-                  <br />
-                  5th Floor, London, United Kingdom,
-                  <br />
-                  W1W 5PF +44 247 698 2792
-                  <br />
-                  +44 758 409 2952
-                </p>
-
-                <p>
-                  UAE: Office 1 Central, Trade Center 1,
-                  <br />
-                  Sheikh Zayed Road, United Arab Emirates.
-                  <br />
-                  04 2983118 | +971528449050
-                </p>
-              </div>
-
-              {/* KSA + PAK */}
-              <div>
-                <p>
-                  KSA: Building no. 4398 Al Mansouriyah,
-                  <br />
-                  Al Masani, 14714, Riyadh +966 50 974
-                  <br />
-                  0033 | 0114422112
-                </p>
-
-                <p>
-                  PAK: Office NO. 9/10, 3rd Floor, Pakland
-                  <br />
-                  City Center, I-8 Markaz, Islamabad
-                  <br />
-                  +92 51 6110529
-                </p>
+    <div className={styles["footer-section"]}>
+      <div className={styles["footer-section-content"]}>
+        <div className={styles["footer-all-coloums"]}>
+          <div className={styles["footer-logo-copyright"]}>
+            <div className={styles["footer-logo-box"]}>
+              <div className={styles["footer-logo"]}>
+                <Link href="/">
+                  <Image src={footerlogo} alt="logo" />
+                </Link>
               </div>
             </div>
+            <p>Copyright © 2025 Swenta Global</p>
           </div>
+          <div className={styles["all-links-coloums"]}>
+            <div className={styles["contact-us-coloum"]}>
+              <h4>Contact</h4>
+              <div className={styles["all-contact-details"]}>
+                <h5>
+                  UK :{" "}
+                  <span>
+                    <Link
+                      href="https://maps.google.com/?q=167-169+Great+Portland+Street+5th+Floor+London+W1W+5PF"
+                      target="_blank"
+                    >
+                      167-169 Great Portland Street, 5th Floor, London, United
+                      Kingdom, W1W 5PF
+                    </Link>{" "}
+                    <Link href="tel:+442476982792">+44 247 698 2792</Link> |{" "}
+                    <Link href="tel:+447584092952">+44 758 409 2952</Link>
+                  </span>
+                </h5>
 
-          {/* ---------------------------------------------------
-              PAGES
-          --------------------------------------------------- */}
+                <h5>
+                  KSA :{" "}
+                  <span>
+                    <Link
+                      href="https://maps.google.com/?q=Building+4398+Al+Mansouriyah+Al+Masani+14714+Riyadh"
+                      target="_blank"
+                    >
+                      Building no. 4398 Al Mansouriyah, Al Masani, 14714, Riyadh
+                    </Link>{" "}
+                    <Link href="tel:+966509740033">+966 50 974 0033</Link> |{" "}
+                    <Link href="tel:+966114422112">0114422112</Link>
+                  </span>
+                </h5>
 
-          <div className={styles.pages}>
-            <h4>Pages</h4>
+                <h5>
+                  UAE :{" "}
+                  <span>
+                    <Link
+                      href="https://maps.google.com/?q=1+Central+Trade+Center+1+Sheikh+Zayed+Road+Dubai+UAE"
+                      target="_blank"
+                    >
+                      Office: 1 Central, Trade Center 1, Sheikh Zayed Road,
+                      United Arab Emirates
+                    </Link>{" "}
+                    <Link href="tel:+97142983118">04 2983118</Link> |{" "}
+                    <Link href="tel:+971528449050">+971 528 449 050</Link>
+                  </span>
+                </h5>
 
-            <ul>
-              <li>
-                <Link href="/about">About us</Link>
-              </li>
+                <h5>
+                  PAK :{" "}
+                  <span>
+                    <Link
+                      href="https://maps.google.com/?q=Pakland+City+Center+I-8+Markaz+Islamabad"
+                      target="_blank"
+                    >
+                      Office No. 9/10, 3rd Floor, Pakland City Center, I-8
+                      Markaz, Islamabad
+                    </Link>{" "}
+                    <Link href="tel:+92516110529">+92 51 6110529</Link>
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className={styles["other-coloum"]}>
+              <h4>Pages</h4>
 
-              <li>
-                <Link href="/services">Services</Link>
-              </li>
+              <div className={styles["all-other-details"]}>
+                <h5>
+                  <Link href="/about-us">About us</Link>
+                </h5>
+                <h5>
+                  <Link href="/services">Services</Link>
+                </h5>
+                <h5>
+                  <Link href="/industries">Industries</Link>
+                </h5>
+                <h5>
+                  <Link href="/careers">Careers</Link>
+                </h5>
+              </div>
+            </div>
+            <div className={styles["other-coloum"]}>
+              <h4>Follow Us</h4>
 
-              <li>
-                <Link href="/industries">Industries</Link>
-              </li>
-
-              <li>
-                <Link href="/careers">Careers</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* ---------------------------------------------------
-              FOLLOW US
-          --------------------------------------------------- */}
-
-          <div className={styles.social}>
-            <h4>Follow Us</h4>
-
-            <ul>
-              <li>
-                <Link href="#">Linkedin</Link>
-              </li>
-
-              <li>
-                <Link href="#">Facebook</Link>
-              </li>
-
-              <li>
-                <Link href="#">Instagram</Link>
-              </li>
-            </ul>
+              <div className={styles["all-other-details"]}>
+                <h5>
+                  <Link href="https://www.linkedin.com/" target="_blank">
+                    Linkedin
+                  </Link>
+                </h5>
+                <h5>
+                  <Link href="https://www.facebook.com/" target="_blank">
+                    Facebook
+                  </Link>
+                </h5>
+                <h5>
+                  <Link href="https://www.instagram.com/" target="_blank">
+                    Instagram
+                  </Link>
+                </h5>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* =====================================================
-            NEWSLETTER + BOTTOM LINKS
-        ===================================================== */}
-
-        <div className={styles.footerBottom}>
-          <div className={styles.newsletter}>
+        <div className={styles["subscribe-section"]}>
+          <div className={styles["newsletter-section"]}>
             <h4>Subscribe to Our Newsletter</h4>
-
             <p>
               Sign up for our newsletter to stay informed about the latest
-              updates, &amp; exclusive offers
+              updates, & exclusive offers
             </p>
           </div>
-
-          <div className={styles.bottom}>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-
-            <Link href="/terms-services">Terms &amp; Services</Link>
+          <div className={styles["link-section"]}>
+            <Link href={"/"}>
+              <h5>Privacy Policy</h5>
+            </Link>
+            <Link href={"/"}>
+              <h5>Terms & Services</h5>
+            </Link>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -1,44 +1,13 @@
 import React from "react";
-import styles from "../../styles/Header.module.scss";
-import Link from "next/link";
-import headerlogo from '../../public/images/headerlogo.svg'
-import Image from "next/image";
-const Header = () => {
-  const headerLinks = [
-    {
-      link: "/",
-      name: "About us",
-    },
-    {
-      link: "/",
-      name: "Products",
-    },
-    {
-      link: "/",
-      name: "Services",
-    },
-    {
-      link: "/",
-      name: "Careers",
-    },
-  ];
+import styles from "../../styles/GetStarted.module.scss";
+const GetStarted = () => {
   return (
-    <div className={styles["header-section"]}>
-      <div className={styles["header-content"]}>
-        <div className={styles["header-logo-box"]}>
-          <div className={styles["header-logo"]}>
-            <Link href={"/"}><Image src={headerlogo} alt="img"/></Link>
-          </div>
-        </div>
-        <div className={styles["header-all-links"]}>
-          {headerLinks.map((item, index) => (
-            <Link href={item.link} key={index}>
-              <h6>{item.name}</h6>
-            </Link>
-          ))}
-        </div>
+    <div className={styles["getstarted-section"]}>
+      <div className={styles["get-started-content"]}>
+        <h6>Get Started Today</h6>
+        <h2>Is Your Business Ready for Growth with Swenta?</h2>
         <button>
-          Get in Touch{" "}
+          Get Started{" "}
           <svg
             width="13"
             height="14"
@@ -57,4 +26,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default GetStarted;

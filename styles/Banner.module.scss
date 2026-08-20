@@ -45,6 +45,10 @@
         letter-spacing: 0%;
         color: #494949;
         margin-top: 20px;
+        width: 80%;
+        @media (max-width:1024px) {
+          width: 100%;
+        }
       }
       p {
         display: flex;
@@ -112,7 +116,7 @@
       }
     }
     .banner-right-section {
-      width: 60%;
+      width: 65%;
       @media (max-width: 1280px) {
         width: 70%;
       }

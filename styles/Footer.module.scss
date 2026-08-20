@@ -1,0 +1,610 @@
+/* ==========================================
+   NEW FOOTER
+========================================== */
+
+.footer {
+  position: relative;
+  background: #22395b;
+  overflow: hidden;
+  color: #fff;
+
+  /* Footer Pattern */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/images/footer-pattern.svg") repeat;
+    background-size: 180px;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+
+  /* White strips behind CTA */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /*
+      CTA starts around 14px from the top.
+      Keep the outside area white until
+      roughly the middle of the CTA.
+    */
+    height: 230px;
+
+    background: #fff;
+
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .container {
+    width: min(94%, 1320px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ==========================================
+      CTA SECTION
+  ========================================== */
+
+  .ctaSection {
+    position: relative;
+    overflow: hidden;
+    background: #fcfcfc;
+    border-radius: 18px;
+    padding: 88px 20px 110px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+
+    /* subtle texture */
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background-image: radial-gradient(
+        rgba(0, 0, 0, 0.03) 0.7px,
+        transparent 0.7px
+      );
+
+      background-size: 7px 7px;
+
+      opacity: 0.25;
+    }
+
+    /* ======================================
+          LEFT BLUE BLUR
+    ====================================== */
+
+    .blurLeft {
+      position: absolute;
+      width: 640px;
+      height: 640px;
+      left: -220px;
+      bottom: -280px;
+      border-radius: 50%;
+      background: radial-gradient(
+        circle,
+        rgba(27, 111, 160, 0.95) 0%,
+        rgba(27, 111, 160, 0.72) 30%,
+        rgba(27, 111, 160, 0.28) 65%,
+        transparent 100%
+      );
+
+      filter: blur(85px);
+
+      z-index: 0;
+    }
+
+    /* ======================================
+          RIGHT GREEN BLUR
+    ====================================== */
+
+    .blurRight {
+      position: absolute;
+
+      width: 720px;
+      height: 720px;
+
+      right: -230px;
+      bottom: -220px;
+
+      border-radius: 50%;
+
+      background: radial-gradient(
+        circle,
+        rgba(174, 248, 150, 0.96) 0%,
+        rgba(174, 248, 150, 0.72) 36%,
+        rgba(174, 248, 150, 0.26) 72%,
+        transparent 100%
+      );
+
+      filter: blur(95px);
+
+      z-index: 0;
+    }
+
+    .subTitle {
+      position: relative;
+      z-index: 3;
+
+      display: inline-block;
+
+      margin-bottom: 24px;
+
+      color: #111;
+
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 3;
+
+      max-width: 860px;
+
+      margin: auto;
+
+      color: #000;
+
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 1.08;
+    }
+
+    .ctaBtn {
+      position: relative;
+      z-index: 3;
+
+      margin-top: 42px;
+
+      height: 56px;
+      padding: 0 28px;
+
+      border: none;
+      border-radius: 10px;
+
+      background: #22395b;
+
+      color: #fff;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      cursor: pointer;
+
+      font-size: 16px;
+      font-weight: 500;
+
+      transition: 0.3s;
+
+      span {
+        font-size: 18px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        background: #172947;
+
+        span {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+}
+/* ==========================================
+   FOOTER CONTENT
+========================================== */
+
+.footer {
+  .footerContent {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1.15fr 2.4fr 0.7fr 0.7fr;
+    column-gap: 65px;
+
+    align-items: flex-start;
+
+    padding-bottom: 70px;
+  }
+
+  /* ==========================
+      LEFT SECTION
+  ========================== */
+
+  .left {
+    .logo {
+      margin-bottom: 22px;
+
+      img {
+        width: 165px;
+        display: block;
+      }
+    }
+
+    .copy {
+      margin: 0;
+
+      color: rgba(255, 255, 255, 0.72);
+
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+  }
+
+  /* ==========================
+      CONTACT
+  ========================== */
+
+  .contact {
+    h4 {
+      margin: 0 0 28px;
+
+      color: #fff;
+
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .contactGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      p {
+        margin: 0;
+
+        color: rgba(255, 255, 255, 0.72);
+
+        font-size: 14px;
+        line-height: 1.85;
+
+        strong {
+          color: #fff;
+          font-weight: 600;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  /* ==========================
+      PAGES
+  ========================== */
+
+  .pages {
+    h4 {
+      margin: 0 0 28px;
+
+      color: #fff;
+
+      font-size: 34px;
+      font-weight: 500;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: rgba(255, 255, 255, 0.72);
+          text-decoration: none;
+
+          font-size: 17px;
+          line-height: 1.7;
+
+          transition: 0.3s;
+
+          &:hover {
+            color: #fff;
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  /* ==========================
+      FOLLOW US
+  ========================== */
+
+  .social {
+    h4 {
+      margin: 0 0 28px;
+
+      color: #fff;
+
+      font-size: 34px;
+      font-weight: 500;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: rgba(255, 255, 255, 0.72);
+          text-decoration: none;
+
+          font-size: 17px;
+          line-height: 1.7;
+
+          transition: 0.3s;
+
+          &:hover {
+            color: #fff;
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+/* ==========================================
+   NEWSLETTER & FOOTER BOTTOM
+========================================== */
+
+.footer {
+  /* ======================================
+      NEWSLETTER + BOTTOM ROW
+  ====================================== */
+
+  .footerBottom {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 70px;
+    padding-bottom: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  /* ==========================
+      NEWSLETTER
+  ========================== */
+
+  .newsletter {
+    max-width: 470px;
+
+    h4 {
+      margin: 0 0 18px;
+
+      color: #fff;
+
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+
+      color: rgba(255, 255, 255, 0.72);
+
+      font-size: 14px;
+      line-height: 1.9;
+      font-weight: 400;
+    }
+  }
+
+  /* ==========================
+      BOTTOM LINKS
+  ========================== */
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 38px;
+
+    white-space: nowrap;
+
+    a {
+      position: relative;
+
+      color: rgba(255, 255, 255, 0.72);
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 400;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+
+        position: absolute;
+
+        right: -19px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 1px;
+        height: 14px;
+
+        background: rgba(255, 255, 255, 0.18);
+      }
+    }
+  }
+
+  /* Small desktop adjustments */
+
+  @media (max-width: 1200px) {
+    .footerBottom {
+      gap: 40px;
+    }
+
+    .newsletter {
+      max-width: 400px;
+
+      h4 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+/* ==========================================
+   NEWSLETTER & FOOTER BOTTOM
+========================================== */
+
+.footer {
+  /* ======================================
+      NEWSLETTER + BOTTOM ROW
+  ====================================== */
+
+  .footerBottom {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 70px;
+    padding-bottom: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  /* ==========================
+      NEWSLETTER
+  ========================== */
+
+  .newsletter {
+    max-width: 470px;
+
+    h4 {
+      margin: 0 0 18px;
+
+      color: #fff;
+
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      line-height: 1.9;
+      font-weight: 400;
+    }
+  }
+
+  /* ==========================
+      BOTTOM LINKS
+  ========================== */
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 38px;
+
+    white-space: nowrap;
+
+    a {
+      position: relative;
+
+      color: rgba(255, 255, 255, 0.72);
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 400;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+
+        position: absolute;
+
+        right: -19px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 1px;
+        height: 14px;
+
+        background: rgba(255, 255, 255, 0.18);
+      }
+    }
+  }
+
+  /* Small desktop adjustments */
+
+  @media (max-width: 1200px) {
+    .footerBottom {
+      gap: 40px;
+    }
+
+    .newsletter {
+      max-width: 400px;
+
+      h4 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

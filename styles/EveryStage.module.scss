@@ -1,0 +1,28 @@
+.every-stage-section {
+  width: 100%;
+  background: #152644;
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  h5 {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: auto;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f2f2f7;
+  }
+  .all-stages {
+    display: flex;
+    gap: 20px;
+    h6 {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      line-height: auto;
+      letter-spacing: 0%;
+      color: #f2f2f7;
+    }
+  }
+}

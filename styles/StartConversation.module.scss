@@ -1,0 +1,88 @@
+.start-conversation-section {
+  width: 100%;
+  background: #152644;
+  padding: 80px 100px;
+  .conversation-left-right-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    .conversation-left-section {
+      h6 {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 14px;
+        line-height: auto;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #f2f2f7;
+      }
+      h2 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -1.4px;
+        color: #f2f2f7;
+        margin-top: 12px;
+      }
+    }
+    .conversation-right-section {
+      p {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        line-height: auto;
+        letter-spacing: 0px;
+        color: #d3d3d3;
+      }
+      button {
+        height: 44px;
+        padding: 0px 20px;
+        border-radius: 7px;
+        background: #f0f0f0;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: auto;
+        letter-spacing: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        gap: 10px;
+        color: #152644;
+        border: none;
+        margin-top: 20px;
+      }
+      h5 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        line-height: auto;
+        letter-spacing: 0px;
+        color: #d3d3d3;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 20px;
+        a {
+          text-decoration: none;
+          span {
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: auto;
+            letter-spacing: 0px;
+            color: #d3d3d3;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: 0%;
+            text-decoration-skip-ink: auto;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.expert-support-section {
+  width: 100%;
+  padding: 60px 70px;
+  h6 {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: auto;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .heading-para {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 80px;
+    margin-top: 16px;
+    h2 {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 65px;
+      line-height: 78px;
+      letter-spacing: -1.7px;
+      color: #000000;
+    }
+    p {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 20px;
+      line-height: auto;
+      letter-spacing: 0%;
+      color: #494949;
+    }
+  }
+  .all-expert-support-cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px ;
+    .expert-support-card {
+      cursor: pointer;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 80%;
+        width: 1px;
+        background-color: #333333;
+      }
+      &:nth-child(3n) {
+        padding-right: 0;
+        &::after {
+          display: none;
+        }
+      }
+      h2 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 80px;
+        line-height: auto;
+        letter-spacing: 0%;
+        color: #494949;
+      }
+      .card-detail {
+        margin-top: 70px;
+        h5 {
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 24px;
+          line-height: auto;
+          letter-spacing: 0px;
+          vertical-align: middle;
+          color: #111111;
+        }
+        p {
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 16px;
+          line-height: auto;
+          letter-spacing: 0%;
+          color: #333333;
+          margin-top: 14px;
+        }
+        button {
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 16px;
+          line-height: auto;
+          letter-spacing: 0%;
+          color: #152644;
+          margin-top: 14px;
+          border: none;
+          cursor: pointer;
+          background: none;
+        }
+      }
+    }
+  }
+}

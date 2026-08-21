@@ -3,39 +3,35 @@ import styles from "../../styles/ExpertSupport.module.scss";
 const TaxExpertSupport = () => {
   const cardData = [
     {
-      num: "/01",
-      name: "Corporate tax registration support",
+      num: "Tax registration",
+      name: "Corporate tax and VAT registration, including the supporting documentation required.",
     },
     {
-      num: "/02",
-      name: "Tax computation and return filing",
+      num: "Return preparation and filing",
+      name: "Computation, review and submission within statutory deadlines.",
     },
     {
-      num: "/03",
-      name: "VAT registration and filing assistance",
+      num: "Tax computation and adjustments",
+      name: "Reconciliation from accounting profit to taxable income with documented adjustments.",
     },
     {
-      num: "/04",
-      name: "Tax health checks and compliance reviews",
+      num: "VAT compliance",
+      name: "Output and input tax review, treatment of exempt and zero-rated supplies, and periodic return support.",
     },
     {
-      num: "/05",
-      name: "Record and documentation readiness",
+      num: "Documentation and record keeping",
+      name: "Working papers and supporting evidence retained in a review-ready format.",
     },
     {
-      num: "/06",
-      name: "Ongoing tax advisory support",
+      num: "Tax advisory",
+      name: "Practical guidance on structure, transactions and the tax impact of business decisions.",
     },
   ];
   return (
     <div className={styles["expert-support-section"]}>
       <h6>— WHAT’S INCLUDED</h6>
       <div className={styles["heading-para"]}>
-        <h2>A focused scope for corporate tax & advisory.</h2>
-        <p>
-          The final engagement is tailored after reviewing your current
-          position, priorities and reporting or compliance requirements.
-        </p>
+        <h2>Included in our Tax filing engagements</h2>
       </div>
       <div className={styles["all-expert-support-cards"]}>
         {cardData.map((item, index) => (

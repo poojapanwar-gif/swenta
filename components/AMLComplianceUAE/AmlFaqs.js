@@ -7,19 +7,24 @@ const AmlFaqs = () => {
 
   const faqsData = [
     {
-      question: "Which businesses need AML compliance support?",
+      question: "Do you write policies or also help implement them?",
       answer:
-        "Obligations vary by sector and regulatory classification. A focused review can establish the applicable requirements.",
+        "Both. A policy only reduces risk when it is applied, so we work with your team on onboarding, screening and escalation workflows as well as documentation.",
     },
     {
-      question: "Can Swenta review an existing AML framework?",
+      question: "Can you review an existing AML framework?",
       answer:
-        "Yes. Swenta can assess policies, risk methodology, due diligence processes and supporting records to identify gaps.",
+        "Yes. We carry out an independent review against your obligations and give you a prioritised remediation plan.",
     },
     {
-      question: "Is AML training included?",
+      question: "Do you provide AML training for staff?",
       answer:
-        "Training and awareness support can be included depending on the engagement scope and team requirements.",
+        "Yes. Training is tailored to roles, so front-line staff, management and the compliance officer each receive relevant content.",
+    },
+    {
+      question: "How long does an AML engagement take?",
+      answer:
+        "A first framework typically takes a few weeks depending on the size of the business and the state of existing documentation.",
     },
   ];
 
@@ -32,7 +37,7 @@ const AmlFaqs = () => {
       <div className={styles["faqs-left-right-section"]}>
         <div className={styles["faqs-left-section"]}>
           <h6>— FREQUENTLY ASKED QUESTIONS</h6>
-          <h2>Answers about audit & assurance.</h2>
+          <h2>AML Compliance questions we are asked</h2>
           <Link href={"/"}>
             <p>Need a specific answer? Call +971 52 844 9050.</p>
           </Link>

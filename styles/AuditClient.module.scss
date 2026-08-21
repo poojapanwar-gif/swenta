@@ -13,9 +13,10 @@
   }
   .audit-experience-left-right-section {
     display: flex;
-    align-items: end;
+    align-items: start;
     gap: 100px;
     .audit-experience-left-section {
+      width: 100%;
       h6 {
         font-weight: 600;
         font-style: SemiBold;
@@ -29,22 +30,74 @@
         font-weight: 400;
         font-style: Regular;
         font-size: 44px;
-        line-height: 62px;
+        line-height: 52px;
         letter-spacing: -1.8px;
         color: #111111;
-        margin-top: 40px;
+        margin-top: 10px;
+      }
+      p {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        line-height: auto;
+        letter-spacing: 0%;
+        color: #333333;
+        margin-top: 10px;
+      }
+      .all-services-list {
+        margin-top: 30px;
+        h4 {
+          font-weight: 400;
+          font-style: Medium;
+          font-size: 20px;
+          line-height: auto;
+          letter-spacing: -0.75px;
+          color: #111111;
+        }
+        .all-lists {
+          margin-top: 20px;
+          .lists {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            svg {
+              flex-shrink: 0;
+            }
+            h5 {
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 16px;
+              line-height: auto;
+              letter-spacing: 0%;
+              color: #333333;
+            }
+          }
+        }
       }
     }
     .audit-experience-right-section {
-      width: 60%;
+      width: 100%;
       .right-content {
-        h5 {
+        background-color: #FFFDFA;
+        border-top: 4px solid #152644;
+        padding: 26px;
+        h4 {
           font-weight: 400;
-          font-style: Regular;
-          font-size: 18px;
+          font-style: Medium;
+          font-size: 20px;
           line-height: auto;
-          letter-spacing: 0%;
-          color: #333333;
+          letter-spacing: -0.75px;
+          color: #111111;
+        }
+        .all-lists {
+          margin-top: 20px;
+          .lists {
+            padding-left: 20px;
+            margin-bottom: 12px;
+            li {
+            }
+          }
         }
       }
     }

@@ -1,20 +1,65 @@
 import React from "react";
 import styles from "../../styles/AuditClient.module.scss";
 const TaxClientExperience = () => {
+  const allList = [
+    "Companies registering for UAE corporate tax for the first time",
+    "VAT-registered businesses filing periodic returns",
+    "Groups with related-party and intercompany transactions",
+    "Free zone entities assessing their tax position",
+  ];
+  const allservicelist = [
+    "Uncertainty about registration requirements and applicable thresholds",
+    "Returns prepared from records that were never reconciled",
+    "Missed or late filings and the exposure that follows",
+    "Unclear treatment of free zone income, group transactions or expenses",
+    "No documentation supporting positions taken in previous filings",
+  ];
   return (
     <div className={styles["audit-experience-section"]}>
       <div className={styles["audit-experience-left-right-section"]}>
         <div className={styles["audit-experience-left-section"]}>
           <h6>—about the service</h6>
-          <h2>Practical support. Clearer outcomes.</h2>
+          <h2>What Tax Filing support from Swenta covers</h2>
+          <p>
+            UAE tax rules continue to develop, and filing correctly depends on
+            the quality of the records behind the return. Swenta handles
+            registration, computation, return preparation and supporting
+            documentation so your filings are accurate, defensible and delivered
+            before the deadline.
+          </p>
+          <div className={styles["all-services-list"]}>
+            <h4>Who this service is for</h4>
+            <div className={styles["all-lists"]}>
+              {allList.map((item, index) => (
+                <div className={styles["lists"]} key={index}>
+                  <svg
+                    width="12"
+                    height="13"
+                    viewBox="0 0 12 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.52796 12.32C2.52796 12.1814 2.50129 12.112 2.44796 12.112L2.07996 12.288C2.07996 12.2134 2.03729 12.16 1.95196 12.128L1.82396 12.112C1.73863 12.112 1.63196 12.1494 1.50396 12.224C1.48263 12.1707 1.45596 12.1174 1.42396 12.064C1.39196 12.0107 1.36529 11.9627 1.34396 11.92C1.20529 11.6534 1.06663 11.36 0.92796 11.04C0.79996 10.7094 0.677293 10.3947 0.55996 10.096C0.453293 9.79736 0.36796 9.56269 0.30396 9.39203C0.261293 9.25336 0.213293 9.04536 0.15996 8.76803C0.106627 8.49069 0.0532933 8.13869 -3.99947e-05 7.71203C0.117293 7.78669 0.20796 7.82403 0.27196 7.82403C0.346627 7.82403 0.41596 7.71203 0.47996 7.48803C0.51196 7.53069 0.570627 7.55203 0.65596 7.55203C0.71996 7.55203 0.76796 7.53069 0.79996 7.48803L1.05596 7.10403L1.34396 7.20003H1.35996C1.38129 7.20003 1.40263 7.18936 1.42396 7.16803C1.44529 7.14669 1.47729 7.12536 1.51996 7.10403C1.60529 7.05069 1.66929 7.02403 1.71196 7.02403L1.75996 7.04003C2.02663 7.16803 2.19729 7.40269 2.27196 7.74403C2.46396 8.55469 2.65596 8.96003 2.84796 8.96003C3.03996 8.96003 3.26396 8.75736 3.51996 8.35203C3.64796 8.14936 3.77596 7.91469 3.90396 7.64803C4.04263 7.38136 4.18129 7.08269 4.31996 6.75203C4.34129 6.88003 4.36263 6.94403 4.38396 6.94403C4.43729 6.94403 4.52796 6.81069 4.65596 6.54403C4.79463 6.27736 5.01329 5.90936 5.31196 5.44003C5.48263 5.15203 5.69596 4.82669 5.95196 4.46403C6.21863 4.10136 6.50129 3.72803 6.79996 3.34403C7.09863 2.96003 7.38663 2.59736 7.66396 2.25603C7.95196 1.91469 8.20796 1.62136 8.43196 1.37603C8.65596 1.13069 8.82129 0.970694 8.92796 0.896028C9.33329 0.618694 9.65329 0.352027 9.88796 0.0960274C9.87729 0.170694 9.86129 0.240027 9.83996 0.304028C9.82929 0.357361 9.82396 0.394694 9.82396 0.416027C9.82396 0.458694 9.84529 0.480027 9.88796 0.480027L10.336 0.256027V0.320027C10.336 0.405361 10.3573 0.448028 10.4 0.448028C10.432 0.448028 10.496 0.400028 10.592 0.304028C10.688 0.208028 10.7413 0.138694 10.752 0.0960274L10.72 0.320027L11.264 2.76566e-05L11.136 0.288028C11.3066 0.170694 11.4293 0.112027 11.504 0.112027C11.5466 0.112027 11.5786 0.138694 11.6 0.192027C11.6213 0.234694 11.632 0.277361 11.632 0.320027C11.632 0.384027 11.6053 0.458694 11.552 0.544027C11.4986 0.629361 11.4293 0.730694 11.344 0.848027C11.28 0.933361 11.1733 1.06136 11.024 1.23203C10.8853 1.39203 10.672 1.63203 10.384 1.95203C10.096 2.26136 9.71196 2.69336 9.23196 3.24803C9.10396 3.38669 8.90663 3.63203 8.63996 3.98403C8.37329 4.32536 8.06929 4.72536 7.72796 5.18403C7.39729 5.63203 7.06663 6.08536 6.73596 6.54403C6.40529 7.00269 6.11196 7.41869 5.85596 7.79203C5.59996 8.15469 5.41863 8.42669 5.31196 8.60803L4.31996 10.288C4.10663 10.6507 3.93063 10.9494 3.79196 11.184C3.65329 11.408 3.54663 11.5627 3.47196 11.648C3.31196 11.84 3.13596 12.0107 2.94396 12.16L2.79996 12.08L2.67196 12.16L2.52796 12.32Z"
+                      fill="#494949"
+                    />
+                  </svg>
+                  <h5>{item}</h5>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <div className={styles["audit-experience-right-section"]}>
           <div className={styles["right-content"]}>
-            <h5>
-              Swenta helps businesses understand their obligations, prepare
-              accurate information and manage tax compliance with clear,
-              commercially practical guidance.
-            </h5>
+            <h4>Problems this service solves</h4>
+            <div className={styles["all-lists"]}>
+              {allservicelist.map((item, index) => (
+                <div className={styles["lists"]} key={index}>
+                  <li>{item}</li>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

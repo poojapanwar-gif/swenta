@@ -1,5 +1,6 @@
 import Banner from "@/components/Home/Banner";
 import ClientExperience from "@/components/Home/ClientExperience";
+import ClientExperienceTwo from "@/components/Home/ClientExperienceTwo";
 import EveryStage from "@/components/Home/EveryStage";
 import ExpertSupport from "@/components/Home/ExpertSupport";
 import Faqs from "@/components/Home/Faqs";
@@ -13,10 +14,11 @@ export default function Home() {
     <>
     <Banner/>
     <EveryStage/>
+    <ClientExperience/>
     <ExpertSupport/>
     <WhySwenta/>
     <OnePartner/>
-    <ClientExperience/>
+    <ClientExperienceTwo/>
     <Faqs/>
     <StartConversation/>
     </>

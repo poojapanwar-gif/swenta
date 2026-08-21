@@ -16,8 +16,8 @@ export default function Home() {
       <TaxClientExperience />
       <TaxExpertSupport />
       <TaxWhySwenta />
-      <TaxWhoSupport/>
       <TaxOnePartner />
+      <TaxWhoSupport/>
       <TaxFaqs />
       <TaxStartConversation />
     </>

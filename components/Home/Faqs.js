@@ -7,29 +7,24 @@ const Faqs = () => {
 
   const faqsData = [
     {
-      question: "Does Swenta work with startups and SMEs?",
+      question: "Can Swenta take over accounting that is already behind?",
       answer:
-        "Yes. Swenta supports startups, SMEs and larger enterprises with services scaled to their requirements and stage of growth.",
+        "Yes. We start with a review of the current position, agree a catch-up plan for prior periods and then move you onto a regular monthly close cycle.",
     },
     {
-      question: "Can Swenta support Mainland and Free Zone businesses?",
+      question: "Which accounting software do you work with?",
       answer:
-        "Swenta works with UAE businesses across different structures. The consultation helps the team understand your setup before recommending the right scope.",
+        "We work with the major cloud accounting platforms and ERP systems used in the UAE. If you have no system in place, we will recommend one that suits your volumes and budget.",
     },
     {
-      question: "What information is needed to get started?",
+      question: "Will my records be ready for audit and corporate tax?",
       answer:
-        "This depends on the service. Start with a short consultation, after which the team will share a clear list of documents and next steps.",
+        "Our close process is designed so that the same records support statutory audit and UAE corporate tax filing without rework.",
     },
     {
-      question: "How much do the services cost?",
+      question: "Do you support businesses outside Dubai?",
       answer:
-        "Fees depend on business size, transaction volume, current systems and the required scope. Swenta provides a tailored proposal after reviewing your needs.",
-    },
-    {
-      question: "How quickly will the team respond?",
-      answer:
-        "Submit your enquiry or message Swenta on WhatsApp. A team member will review your request and contact you during business hours.",
+        "Yes. We support clients across the UAE, including free zone and mainland entities in other emirates.",
     },
   ];
 
@@ -42,7 +37,7 @@ const Faqs = () => {
       <div className={styles["faqs-left-right-section"]}>
         <div className={styles["faqs-left-section"]}>
           <h6>— FREQUENTLY ASKED QUESTIONS</h6>
-          <h2>Useful answers before you get started.</h2>
+          <h2>Accounting questions we are asked</h2>
           <Link href={"/"}>
             <p>
               Still have a question? Call +971 52 844 9050 or speak with the

@@ -17,8 +17,8 @@ export default function Home() {
     <AuditClientExperience/>
     <AuditExpertSupport/>
     <AuditWhySwenta/>
-    <AuditWhoSupport/>
     <AuditOnePartner/>
+     <AuditWhoSupport/>
     <AuditFaqs/>
     <AuditStartConversation/>
     </>

@@ -86,13 +86,48 @@
       }
     }
   }
+  .both-buttons {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    button {
+      height: 44px;
+      border-radius: 7px;
+      padding: 0px 20px;
+      background-color: transparent;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      line-height: auto;
+      letter-spacing: 0%;
+      color: #152644;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      border: 1px solid #152644;
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #152644;
+      }
+    }
+    .book-button {
+      background: #152644;
+      color: #ffffff;
+    }
+  }
 }
 @media (max-width: 1024px) {
   .one-partner-section {
     padding: 40px 20px;
     h6 {
       font-size: 14px;
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         font-size: 13px;
       }
     }
@@ -115,7 +150,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        .card-detail{
+        .card-detail {
           text-align: center;
         }
       }

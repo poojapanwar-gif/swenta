@@ -3,39 +3,35 @@ import styles from "../../styles/ExpertSupport.module.scss";
 const AmlExpertSupport = () => {
   const cardData = [
     {
-      num: "/01",
-      name: "AML/CFT policy and procedure review",
+      num: "Business risk assessment",
+      name: "Assessment of customer, product, delivery-channel, geography and transaction risk with a documented methodology.",
     },
     {
-      num: "/02",
-      name: "Business risk assessment support",
+      num: "Policies, controls and procedures",
+      name: "AML/CFT policy, customer acceptance rules and internal procedures written for your actual operations.",
     },
     {
-      num: "/03",
-      name: "Customer due diligence framework",
+      num: "KYC and customer due diligence",
+      name: "Onboarding standards, enhanced due diligence triggers, screening and periodic refresh processes.",
     },
     {
-      num: "/04",
-      name: "Compliance gap and health checks",
+      num: "Transaction monitoring support",
+      name: "Monitoring rules, alert handling workflow and escalation criteria.",
     },
     {
-      num: "/05",
-      name: "Staff awareness and training support",
+      num: "Reporting and record keeping",
+      name: "Internal escalation, suspicious activity reporting workflow and retention standards.",
     },
     {
-      num: "/06",
-      name: "Ongoing monitoring and advisory",
+      num: "Training and independent review",
+      name: "Role-based staff training and periodic testing of framework effectiveness.",
     },
   ];
   return (
     <div className={styles["expert-support-section"]}>
       <h6>— WHAT’S INCLUDED</h6>
       <div className={styles["heading-para"]}>
-        <h2>A focused scope for aml compliance.</h2>
-        <p>
-          The final engagement is tailored after reviewing your current
-          position, priorities and reporting or compliance requirements.
-        </p>
+        <h2>Included in our AML Compliance engagements</h2>
       </div>
       <div className={styles["all-expert-support-cards"]}>
         {cardData.map((item, index) => (

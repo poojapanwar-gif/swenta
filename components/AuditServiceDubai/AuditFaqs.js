@@ -7,19 +7,25 @@ const AuditFaqs = () => {
 
   const faqsData = [
     {
-      question: "What is the difference between internal and external audit?",
+      question: "Can you help if our audit starts in a few weeks?",
       answer:
-        "Internal audit focuses on controls, risks and operations. External audit provides independent assurance on financial statements. The appropriate scope depends on your requirement.",
+        "Yes. We prioritise the schedules and reconciliations auditors request first, then work through the remaining areas alongside fieldwork.",
     },
     {
-      question: "Can Swenta help prepare for an audit?",
+      question:
+        "What is the difference between internal audit and audit readiness?",
       answer:
-        "Yes. The team can review records, reconciliations and supporting documentation before the formal engagement.",
+        "Audit readiness prepares your records and documentation for an external audit. Internal audit independently tests whether controls and processes are operating as intended.",
     },
     {
-      question: "How long does an audit take?",
+      question: "Do you review internal controls as well as numbers?",
       answer:
-        "Timing depends on business size, record readiness, reporting period and scope. These are assessed before the engagement begins.",
+        "Yes. Controls review is often where the most durable improvement comes from, because it reduces the errors that create audit findings.",
+    },
+    {
+      question: "Which industries do you support?",
+      answer:
+        "Our audit and assurance experience spans financial services, banking, retail, FMCG, technology, professional services, government and oil and gas.",
     },
   ];
 
@@ -32,7 +38,7 @@ const AuditFaqs = () => {
       <div className={styles["faqs-left-right-section"]}>
         <div className={styles["faqs-left-section"]}>
           <h6>— FREQUENTLY ASKED QUESTIONS</h6>
-          <h2>Answers about audit & assurance.</h2>
+          <h2>Audit questions we are asked</h2>
           <Link href={"/"}>
             <p>Need a specific answer? Call +971 52 844 9050.</p>
           </Link>

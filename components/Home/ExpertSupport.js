@@ -3,51 +3,35 @@ import styles from "../../styles/ExpertSupport.module.scss";
 const ExpertSupport = () => {
   const cardData = [
     {
-      num: "/01",
-      name: "Accounting & Bookkeeping",
-      detail:
-        "Accurate records, management accounts and reporting that bring financial clarity.",
+      num: "Bookkeeping and transaction processing",
+      name: "Sales, purchases, banking, payroll journals and reconciliations maintained on a fixed monthly cycle.",
     },
     {
-      num: "/02",
-      name: "Corporate Tax & Advisory",
-      detail:
-        "Practical UAE tax support focused on accuracy, compliance and better decisions.",
+      num: "Month-end close and reconciliations",
+      name: "Bank, receivable, payable and intercompany reconciliations with a documented close checklist.",
     },
     {
-      num: "/03",
-      name: "Audit & Assurance",
-      detail:
-        "Independent support that strengthens transparency and financial controls.",
+      num: "Management reporting",
+      name: "Profit and loss, balance sheet, cash-flow summary and the operational KPIs relevant to your sector.",
     },
     {
-      num: "/04",
-      name: "AML Compliance",
-      detail:
-        "Risk-based frameworks and reviews aligned with UAE regulatory requirements.",
+      num: "Financial statement preparation",
+      name: "Year-end statements prepared in a format your auditors and banks expect.",
     },
     {
-      num: "/05",
-      name: "Outsourced CFO",
-      detail:
-        "Strategic planning, cash-flow oversight and management decision support.",
+      num: "Accounts payable and receivable support",
+      name: "Supplier and customer ledger management, ageing analysis and collection follow-up.",
     },
     {
-      num: "/06",
-      name: "E-Invoicing",
-      detail:
-        "Readiness and implementation support for compliant digital invoicing.",
+      num: "Accounting system setup",
+      name: "Chart of accounts design, opening balances and migration to cloud accounting or ERP platforms.",
     },
   ];
   return (
     <div className={styles["expert-support-section"]}>
       <h6>—EXPERT SUPPORT</h6>
       <div className={styles["heading-para"]}>
-        <h2>One partner for your financial operations.</h2>
-        <p>
-          Select a service to see campaign-specific messaging and request a
-          focused consultation.
-        </p>
+        <h2>Included in our Accounting engagements</h2>
       </div>
       <div className={styles["all-expert-support-cards"]}>
         {cardData.map((item, index) => (

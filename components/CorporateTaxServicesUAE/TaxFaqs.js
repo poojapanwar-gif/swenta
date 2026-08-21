@@ -7,19 +7,24 @@ const TaxFaqs = () => {
 
   const faqsData = [
     {
-      question: "Does every UAE business need a tax review?",
+      question: "Do you handle both corporate tax and VAT?",
       answer:
-        "Requirements depend on the entity, activity and financial position. A consultation helps establish which obligations apply.",
+        "Yes. We support registration, periodic VAT returns and annual corporate tax filings, along with the records that support them.",
     },
     {
-      question: "Can Swenta help with both corporate tax and VAT?",
+      question: "Can you file if our bookkeeping is incomplete?",
       answer:
-        "Yes. The scope can cover corporate tax, VAT and related accounting requirements based on your needs.",
+        "We first bring the records to a reliable state, because an accurate return depends on reconciled accounts.",
     },
     {
-      question: "What is required before filing?",
+      question: "Do you advise on free zone tax positions?",
       answer:
-        "Accurate accounting records and supporting documentation are essential. Swenta can first assess readiness and identify gaps.",
+        "Yes. We review your activities and structure and explain how the current rules apply to your circumstances.",
+    },
+    {
+      question: "Will you remind us about deadlines?",
+      answer:
+        "Yes. We work to a filing calendar agreed with you and request information well ahead of each due date.",
     },
   ];
 
@@ -32,7 +37,7 @@ const TaxFaqs = () => {
       <div className={styles["faqs-left-right-section"]}>
         <div className={styles["faqs-left-section"]}>
           <h6>— FREQUENTLY ASKED QUESTIONS</h6>
-          <h2>Answers about corporate tax & advisory.</h2>
+          <h2>Tax Filing questions we are asked</h2>
           <Link href={"/"}>
             <p>Need a specific answer? Call +971 52 844 9050.</p>
           </Link>

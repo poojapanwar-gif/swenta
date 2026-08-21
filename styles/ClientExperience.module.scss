@@ -72,6 +72,24 @@
           gap: 10px;
           cursor: pointer;
           margin-top: 16px;
+          position: relative;
+          padding-bottom: 2px;
+          transition: all 0.3s ease;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background: #152644;
+            transition: width 0.3s ease;
+          }
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
         }
       }
     }

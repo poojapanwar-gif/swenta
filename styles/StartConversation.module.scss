@@ -69,6 +69,26 @@
         color: #152644;
         border: none;
         margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(21,38,68,0.08), transparent);
+          transition: left 0.5s ease;
+        }
+        &:hover {
+          background: #e4e4e4;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          &::before {
+            left: 100%;
+          }
+        }
       }
       h5 {
         font-weight: 400;

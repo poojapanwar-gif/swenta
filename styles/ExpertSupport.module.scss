@@ -47,6 +47,20 @@
       border: 1px solid #333333;
       padding: 20px;
       border-radius: 7px;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 0;
+        background: linear-gradient(180deg, #152644, #69817a);
+        border-radius: 7px 0 0 7px;
+        transition: height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
       h2 {
         font-weight: 500;
         font-style: Medium;
@@ -54,6 +68,8 @@
         line-height: auto;
         letter-spacing: 0%;
         color: #111111;
+        transition: all 0.3s ease;
+        padding-left: 12px;
       }
       .card-detail {
         margin-top: 20px;
@@ -65,6 +81,24 @@
           letter-spacing: 0px;
           vertical-align: middle;
           color: #494949;
+          transition: all 0.3s ease;
+          padding-left: 12px;
+        }
+      }
+      &:hover {
+        transform: translateY(-6px);
+        border-color: transparent;
+        box-shadow: 0 20px 40px rgba(21, 38, 68, 0.15);
+        &::before {
+          height: 100%;
+        }
+        h2 {
+          color: #152644;
+          padding-left: 16px;
+        }
+        .card-detail h5 {
+          color: #111111;
+          padding-left: 16px;
         }
       }
     }

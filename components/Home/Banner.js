@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "../../styles/Banner.module.scss";
 const Banner = () => {
   const trustedlist = [
@@ -6,6 +7,41 @@ const Banner = () => {
     "Chartered Accountants",
     "UAE-focused expertise",
   ];
+  const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    company: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    else if (!/^\S+@\S+\.\S+$/.test(formData.email)) newErrors.email = "Invalid email";
+    if (!formData.company.trim()) newErrors.company = "Company is required";
+    if (!formData.service.trim()) newErrors.service = "Service is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = validate();
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      console.log(formData);
+    }
+  };
+
   return (
     <div className={styles["banner-section"]}>
       <div className={styles["banner-left-right-section"]}>
@@ -81,13 +117,28 @@ const Banner = () => {
               WhatsApp.
             </p>
             <div className={styles["form-all-inputs"]}>
-              <input type="text" placeholder="Full name" />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Company" />
-              <input type="text" placeholder="Service Required" />
-              <textarea type="text" placeholder="What do you need?" rows={4} />
+              <div>
+                <input type="text" name="fullName" placeholder="Full name" value={formData.fullName} onChange={handleChange} />
+                {errors.fullName && <p style={{color:"red",fontSize:"12px",marginTop:"2px"}}>{errors.fullName}</p>}
+              </div>
+              <div>
+                <input type="text" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+                {errors.email && <p style={{color:"red",fontSize:"12px",marginTop:"2px"}}>{errors.email}</p>}
+              </div>
+              <div>
+                <input type="text" name="company" placeholder="Company" value={formData.company} onChange={handleChange} />
+                {errors.company && <p style={{color:"red",fontSize:"12px",marginTop:"2px"}}>{errors.company}</p>}
+              </div>
+              <div>
+                <input type="text" name="service" placeholder="Service Required" value={formData.service} onChange={handleChange} />
+                {errors.service && <p style={{color:"red",fontSize:"12px",marginTop:"2px"}}>{errors.service}</p>}
+              </div>
+              <div>
+                <textarea type="text" name="message" placeholder="What do you need?" rows={4} value={formData.message} onChange={handleChange} />
+                {errors.message && <p style={{color:"red",fontSize:"12px",marginTop:"2px"}}>{errors.message}</p>}
+              </div>
               <div className={styles["submit-button"]}>
-                <button>
+                <button onClick={handleSubmit}>
                   Continue with WhatsApp
                   <svg
                     width="13"

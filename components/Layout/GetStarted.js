@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../../styles/GetStarted.module.scss";
+import Link from "next/link";
 const GetStarted = () => {
   return (
     <div className={styles["getstarted-section"]}>
       <div className={styles["get-started-content"]}>
         <h6>Get Started Today</h6>
         <h2>Is Your Business Ready for Growth with Swenta?</h2>
+        <Link href="https://swentaglobal.com/contact/" target="_blank">
         <button>
           Get Started{" "}
           <svg
@@ -21,6 +23,7 @@ const GetStarted = () => {
             />
           </svg>
         </button>
+        </Link>
       </div>
     </div>
   );

@@ -9,19 +9,19 @@ const Header = () => {
 
   const headerLinks = [
     {
-      link: "/",
+      link: "https://swentaglobal.com/about-us/",
       name: "About us",
     },
     {
-      link: "/",
+      link: "https://swentaglobal.com/products/",
       name: "Products",
     },
     {
-      link: "/",
+      link: "https://swentaglobal.com/services/",
       name: "Services",
     },
     {
-      link: "/",
+      link: "https://swentaglobal.com/careers/",
       name: "Careers",
     },
   ];

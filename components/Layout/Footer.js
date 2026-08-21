@@ -4,6 +4,57 @@ import Image from "next/image";
 import footerlogo from "../../public/images/footerlogo.svg";
 import Link from "next/link";
 const Footer = () => {
+  const contactData = [
+    {
+      country: "UK",
+      address: "167-169 Great Portland Street, 5th Floor, London, United Kingdom, W1W 5PF",
+      mapLink: "https://maps.google.com/?q=167-169+Great+Portland+Street+5th+Floor+London+W1W+5PF",
+      phones: [
+        { number: "+44 247 698 2792", link: "tel:+442476982792" },
+        { number: "+44 758 409 2952", link: "tel:+447584092952" },
+      ],
+    },
+    {
+      country: "KSA",
+      address: "Building no. 4398 Al Mansouriyah, Al Masani, 14714, Riyadh",
+      mapLink: "https://maps.google.com/?q=Building+4398+Al+Mansouriyah+Al+Masani+14714+Riyadh",
+      phones: [
+        { number: "+966 50 974 0033", link: "tel:+966509740033" },
+        { number: "0114422112", link: "tel:+966114422112" },
+      ],
+    },
+    {
+      country: "UAE",
+      address: "Office: 1 Central, Trade Center 1, Sheikh Zayed Road, United Arab Emirates",
+      mapLink: "https://maps.google.com/?q=1+Central+Trade+Center+1+Sheikh+Zayed+Road+Dubai+UAE",
+      phones: [
+        { number: "04 2983118", link: "tel:+97142983118" },
+        { number: "+971 528 449 050", link: "tel:+971528449050" },
+      ],
+    },
+    {
+      country: "PAK",
+      address: "Office No. 9/10, 3rd Floor, Pakland City Center, I-8 Markaz, Islamabad",
+      mapLink: "https://maps.google.com/?q=Pakland+City+Center+I-8+Markaz+Islamabad",
+      phones: [
+        { number: "+92 51 6110529", link: "tel:+92516110529" },
+      ],
+    },
+  ];
+
+  const pagesData = [
+    { name: "About us", link: "https://swentaglobal.com/about-us/" },
+    { name: "Services", link: "https://swentaglobal.com/services/" },
+    { name: "Industries", link: "https://swentaglobal.com/services/#" },
+    { name: "Careers", link: "https://swentaglobal.com/careers/" },
+  ];
+
+  const socialData = [
+    { name: "Linkedin", link: "https://www.linkedin.com/company/swentaglobal/" },
+    { name: "Facebook", link: "https://www.facebook.com/profile.php?id=61572243486744&is_tour_dismissed" },
+    { name: "Instagram", link: "https://www.instagram.com/swentaltd/" },
+  ];
+
   return (
     <div className={styles["footer-section"]}>
       <div className={styles["footer-section-content"]}>
@@ -22,102 +73,44 @@ const Footer = () => {
             <div className={styles["contact-us-coloum"]}>
               <h4>Contact</h4>
               <div className={styles["all-contact-details"]}>
-                <h5>
-                  UK :{" "}
-                  <span>
-                    <Link
-                      href="https://maps.google.com/?q=167-169+Great+Portland+Street+5th+Floor+London+W1W+5PF"
-                      target="_blank"
-                    >
-                      167-169 Great Portland Street, 5th Floor, London, United
-                      Kingdom, W1W 5PF
-                    </Link>{" "}
-                    <Link href="tel:+442476982792">+44 247 698 2792</Link> |{" "}
-                    <Link href="tel:+447584092952">+44 758 409 2952</Link>
-                  </span>
-                </h5>
-
-                <h5>
-                  KSA :{" "}
-                  <span>
-                    <Link
-                      href="https://maps.google.com/?q=Building+4398+Al+Mansouriyah+Al+Masani+14714+Riyadh"
-                      target="_blank"
-                    >
-                      Building no. 4398 Al Mansouriyah, Al Masani, 14714, Riyadh
-                    </Link>{" "}
-                    <Link href="tel:+966509740033">+966 50 974 0033</Link> |{" "}
-                    <Link href="tel:+966114422112">0114422112</Link>
-                  </span>
-                </h5>
-
-                <h5>
-                  UAE :{" "}
-                  <span>
-                    <Link
-                      href="https://maps.google.com/?q=1+Central+Trade+Center+1+Sheikh+Zayed+Road+Dubai+UAE"
-                      target="_blank"
-                    >
-                      Office: 1 Central, Trade Center 1, Sheikh Zayed Road,
-                      United Arab Emirates
-                    </Link>{" "}
-                    <Link href="tel:+97142983118">04 2983118</Link> |{" "}
-                    <Link href="tel:+971528449050">+971 528 449 050</Link>
-                  </span>
-                </h5>
-
-                <h5>
-                  PAK :{" "}
-                  <span>
-                    <Link
-                      href="https://maps.google.com/?q=Pakland+City+Center+I-8+Markaz+Islamabad"
-                      target="_blank"
-                    >
-                      Office No. 9/10, 3rd Floor, Pakland City Center, I-8
-                      Markaz, Islamabad
-                    </Link>{" "}
-                    <Link href="tel:+92516110529">+92 51 6110529</Link>
-                  </span>
-                </h5>
+                {contactData.map((item, index) => (
+                  <h5 key={index}>
+                    {item.country} :{" "}
+                    <span>
+                      <Link href={item.mapLink} target="_blank">
+                        {item.address}
+                      </Link>{" "}
+                      {item.phones.map((phone, i) => (
+                        <React.Fragment key={i}>
+                          <Link href={phone.link}>{phone.number}</Link>
+                          {i < item.phones.length - 1 && " | "}
+                        </React.Fragment>
+                      ))}
+                    </span>
+                  </h5>
+                ))}
               </div>
             </div>
             <div className={styles["other-coloum"]}>
               <h4>Pages</h4>
-
               <div className={styles["all-other-details"]}>
-                <h5>
-                  <Link href="/about-us">About us</Link>
-                </h5>
-                <h5>
-                  <Link href="/services">Services</Link>
-                </h5>
-                <h5>
-                  <Link href="/industries">Industries</Link>
-                </h5>
-                <h5>
-                  <Link href="/careers">Careers</Link>
-                </h5>
+                {pagesData.map((item, index) => (
+                  <h5 key={index}>
+                    <Link href={item.link}>{item.name}</Link>
+                  </h5>
+                ))}
               </div>
             </div>
             <div className={styles["other-coloum"]}>
               <h4>Follow Us</h4>
-
               <div className={styles["all-other-details"]}>
-                <h5>
-                  <Link href="https://www.linkedin.com/" target="_blank">
-                    Linkedin
-                  </Link>
-                </h5>
-                <h5>
-                  <Link href="https://www.facebook.com/" target="_blank">
-                    Facebook
-                  </Link>
-                </h5>
-                <h5>
-                  <Link href="https://www.instagram.com/" target="_blank">
-                    Instagram
-                  </Link>
-                </h5>
+                {socialData.map((item, index) => (
+                  <h5 key={index}>
+                    <Link href={item.link} target="_blank">
+                      {item.name}
+                    </Link>
+                  </h5>
+                ))}
               </div>
             </div>
           </div>
@@ -131,10 +124,10 @@ const Footer = () => {
             </p>
           </div>
           <div className={styles["link-section"]}>
-            <Link href={"/"}>
+            <Link href={"https://swentaglobal.com/privacy-policy/"}>
               <h5>Privacy Policy</h5>
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://swentaglobal.com/terms-services/"}>
               <h5>Terms & Services</h5>
             </Link>
           </div>

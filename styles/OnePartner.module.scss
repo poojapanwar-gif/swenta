@@ -120,6 +120,14 @@
       background: #152644;
       color: #ffffff;
     }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+      button{
+        width: 100%;
+      }
+    }
   }
 }
 @media (max-width: 1024px) {

@@ -8,7 +8,7 @@
     padding: 40px 20px;
   }
   @media (max-width: 768px) {
-    padding: 40px 0px;
+    padding: 40px 16px;
   }
   h6 {
     font-weight: 600;
@@ -84,36 +84,21 @@
         font-size: 38px;
         line-height: 44px;
       }
-      p {
-        font-size: 18px;
-      }
     }
     .all-expert-support-cards {
       margin-top: 20px;
       grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
       .expert-support-card {
         padding-right: 0px;
         padding: 20px;
-        &::after {
-          display: none;
-        }
         h2 {
-          font-size: 58px;
+          font-size: 24px;
         }
         .card-detail {
-          margin-top: 40px;
           h5 {
-            font-size: 20px;
-          }
-          p {
             font-size: 16px;
           }
-          button {
-            font-size: 16px;
-          }
-        }
-        &:nth-child(even) {
-          border-left: 1px solid #000000;
         }
       }
     }
@@ -123,41 +108,29 @@
   .expert-support-section {
     h6 {
       font-size: 12px;
-      padding: 0px 16px;
     }
     .heading-para {
       gap: 10px;
-      padding: 0px 16px;
       h2 {
         font-size: 28px;
         line-height: 30px;
-      }
-      p {
-        font-size: 16px;
+        width: 100%;
       }
     }
     .all-expert-support-cards {
-      margin-top: 10px;
+      margin-top: 20px;
       grid-template-columns: repeat(1, 1fr);
-      gap: 0px;
+      gap: 16px;
       .expert-support-card {
-        border-bottom: 1px solid #000000;
-        &:last-child {
-          border-bottom: none;
-        }
+        padding: 14px;
         h2 {
-          font-size: 64px;
+          font-size: 20px;
         }
         .card-detail {
+          margin-top: 10px;
           h5 {
-            font-size: 18px;
+            font-size: 16px;
           }
-          p {
-            font-size: 14px;
-          }
-        }
-        &:nth-child(even) {
-          border-left: none;
         }
       }
     }

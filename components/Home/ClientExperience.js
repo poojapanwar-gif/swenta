@@ -19,13 +19,13 @@ const ClientExperience = () => {
       <div className={styles["audit-experience-left-right-section"]}>
         <div className={styles["audit-experience-left-section"]}>
           <h6>—about the service</h6>
-          <h2>What Tax Filing support from Swenta covers</h2>
+          <h2>What Accounting support from Swenta covers</h2>
           <p>
-            UAE tax rules continue to develop, and filing correctly depends on
-            the quality of the records behind the return. Swenta handles
-            registration, computation, return preparation and supporting
-            documentation so your filings are accurate, defensible and delivered
-            before the deadline.
+            Swenta provides tailored accounting support for startups, SMEs and
+            established enterprises operating in the UAE. We maintain your books
+            to a consistent standard, close each period on schedule and give you
+            management information you can actually use for decisions — not just
+            a file of transactions at year end.
           </p>
           <div className={styles["all-services-list"]}>
             <h4>Who this service is for</h4>
